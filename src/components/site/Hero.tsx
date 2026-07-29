@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section id="hero" className="relative flex min-h-screen items-center overflow-hidden">
       <div
-        className="absolute inset-0 -z-10 scale-110 will-change-transform"
+        className="absolute inset-0 z-0 scale-110 will-change-transform"
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.1)` }}
       >
         <img
@@ -28,7 +28,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-transparent" />
       </div>
 
-      <div className="container-lux w-full py-32">
+      <div className="container-lux relative z-10 w-full py-32">
         <div className="max-w-2xl">
           <span className="animate-fade-up inline-block rounded-full border border-gold/70 bg-white/10 px-5 py-2 text-[0.65rem] tracking-[0.35em] text-white uppercase backdrop-blur-sm">
             MUA Hapsari

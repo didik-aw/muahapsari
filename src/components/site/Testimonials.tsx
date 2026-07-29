@@ -52,7 +52,7 @@ export function Testimonials() {
         </div>
 
         <div className="reveal relative mx-auto mt-14 max-w-3xl" data-reveal data-delay="180">
-          <div className="relative min-h-[19rem] sm:min-h-[16rem]">
+          <div className="relative min-h-[24rem] sm:min-h-[20rem]">
             {testimonials.map((t, i) => (
               <figure
                 key={t.name}
