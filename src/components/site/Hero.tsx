@@ -18,8 +18,8 @@ export function Hero() {
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.1)` }}
       >
         <img
-          src={heroBride}
-          alt="Pengantin dengan riasan elegan karya MUA Hapsari"
+          src={heroCouple.url}
+          alt="Pasangan pengantin dalam busana adat Jawa yang anggun karya MUA Hapsari"
           width={1920}
           height={1280}
           className="h-full w-full object-cover object-center"
