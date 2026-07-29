@@ -92,6 +92,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "MUA Hapsari — Make Up Artist Elegan" },
+      { name: "twitter:description", content: "Jasa make up artist profesional untuk pengantin, keluarga, wisuda, dan pesta di Boyolali." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3c7cfca1-92c8-4304-81d4-d22ecf8e21b6/id-preview-6a476178--16949ff1-d920-4082-ae47-99abc2763f90.lovable.app-1785293039323.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3c7cfca1-92c8-4304-81d4-d22ecf8e21b6/id-preview-6a476178--16949ff1-d920-4082-ae47-99abc2763f90.lovable.app-1785293039323.png" },
     ],
     links: [
       {
