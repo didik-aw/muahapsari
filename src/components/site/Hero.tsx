@@ -30,10 +30,6 @@ export function Hero() {
 
       <div className="container-lux relative z-10 w-full py-32">
         <div className="max-w-2xl">
-          <span className="animate-fade-up inline-block rounded-full border border-gold/70 bg-white/10 px-5 py-2 text-[0.65rem] tracking-[0.35em] text-white uppercase backdrop-blur-sm">
-            MUA Hapsari
-          </span>
-
           <h1
             className="animate-fade-up mt-8 font-display text-4xl leading-[1.15] text-white sm:text-5xl lg:text-6xl"
             style={{ animationDelay: "150ms" }}
