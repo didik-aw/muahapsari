@@ -1,4 +1,4 @@
-import { WHATSAPP_LINK } from "@/lib/site";
+import { WHATSAPP_LINK, WHATSAPP_NUMBER } from "@/lib/site";
 
 export function CallToAction() {
   return (
@@ -22,7 +22,7 @@ export function CallToAction() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-sm font-medium text-gold-dark shadow-[var(--shadow-lift)] transition-all duration-300 hover:-translate-y-1 hover:bg-cream"
           >
-            Booking via WhatsApp
+            Booking via WhatsApp {WHATSAPP_NUMBER}
           </a>
         </div>
       </div>
