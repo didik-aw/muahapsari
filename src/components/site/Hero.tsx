@@ -31,7 +31,7 @@ export function Hero() {
       <div className="container-lux relative z-10 w-full py-32">
         <div className="max-w-2xl">
           <h1
-            className="animate-fade-up mt-8 font-display text-4xl leading-[1.15] text-white sm:text-5xl lg:text-6xl"
+            className="animate-fade-up mt-8 font-display text-3xl leading-[1.15] text-white sm:text-4xl lg:text-5xl"
             style={{ animationDelay: "150ms" }}
           >
             Setiap Perempuan Berhak Menjadi{" "}
