@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import heroCouple from "@/assets/hero-couple.jpg.asset.json";
+import heroBride from "@/assets/hero-bride.jpg.asset.json";
 import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Hero() {
@@ -18,8 +18,8 @@ export function Hero() {
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.1)` }}
       >
         <img
-          src={heroCouple.url}
-          alt="Pasangan pengantin dalam busana adat Jawa yang anggun karya MUA Hapsari"
+          src={heroBride.url}
+          alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
           width={1920}
           height={1280}
           className="h-full w-full object-cover object-center"
