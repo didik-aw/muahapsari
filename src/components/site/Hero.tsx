@@ -14,15 +14,15 @@ export function Hero() {
   return (
     <section id="hero" className="relative flex min-h-screen items-center overflow-hidden">
       <div
-        className="absolute inset-0 z-0 scale-110 will-change-transform"
-        style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.1)` }}
+        className="absolute inset-0 z-0 will-change-transform"
+        style={{ transform: `translate3d(0, ${offset}px, 0) scale(1)` }}
       >
         <img
           src={heroBride.url}
           alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
           width={1920}
           height={1280}
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-[70%_center]"
         />
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-transparent" />
