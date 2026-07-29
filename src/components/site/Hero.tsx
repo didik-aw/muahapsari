@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import heroBride from "@/assets/hero-bride.jpg";
+import heroCouple from "@/assets/hero-couple.jpg.asset.json";
 import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Hero() {
