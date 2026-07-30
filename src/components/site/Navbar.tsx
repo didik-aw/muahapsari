@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoHapsari from "@/assets/logo-hapsari.png.asset.json";
 import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Navbar() {
