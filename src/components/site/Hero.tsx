@@ -17,13 +17,13 @@ export function Hero() {
         className="absolute inset-0 z-0 will-change-transform"
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1)` }}
       >
-        <div className="absolute inset-y-0 right-0 w-full md:w-[92%] lg:w-[86%]">
+        <div className="absolute inset-y-0 right-0 w-full md:w-[78%] lg:w-[70%]">
           <img
             src={heroBride.url}
             alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
             width={1920}
             height={1280}
-            className="h-full w-full object-cover object-[85%_center] brightness-110"
+            className="h-full w-full object-cover object-[95%_center] brightness-110"
           />
         </div>
         <div className="absolute inset-0 bg-black/40" />
