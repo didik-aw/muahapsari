@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import heroBride from "@/assets/hero-bride.jpg.asset.json";
-import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
