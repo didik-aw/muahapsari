@@ -22,16 +22,14 @@ export function Navbar() {
     >
       <nav className="container-lux grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-4">
         <a href="#hero" className="flex min-w-0 items-center gap-3">
-          <span
-            className={`grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-colors duration-300 ${
-              scrolled ? "border-gold/60 bg-blush" : "border-white/50 bg-white/10"
-            }`}
-          >
-            <span
-              className={`font-display text-lg leading-none ${scrolled ? "text-gold-dark" : "text-white"}`}
-            >
-              H
-            </span>
+          <span className="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-gold/60 shadow-sm">
+            <img
+              src={logoHapsari.url}
+              alt="Logo MUA Hapsari"
+              width={40}
+              height={40}
+              className="h-full w-full object-cover"
+            />
           </span>
           <span className="min-w-0">
             <span
