@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import heroBride from "@/assets/hero-bride.jpg.asset.json";
-import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
@@ -54,9 +53,6 @@ export function Hero() {
             className="animate-fade-up mt-10 flex flex-wrap gap-4"
             style={{ animationDelay: "450ms" }}
           >
-            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold">
-              Booking Sekarang
-            </a>
             <a href="#galeri" className="btn-outline-light">
               Lihat Galeri
             </a>
