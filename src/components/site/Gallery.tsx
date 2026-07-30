@@ -10,7 +10,7 @@ const photos = [
   { src: g1, alt: "Riasan pengantin natural glam dengan veil" },
   { src: g2, alt: "Proses make up di studio oleh MUA Hapsari" },
   { src: g3, alt: "Riasan wisuda yang segar dan elegan" },
-  { src: g4, alt: "Make up party dengan sentuhan glamor lembut" },
+  { src: g4Asset.url, alt: "Pasangan pengantin dalam busana adat Jawa yang anggun" },
   { src: g5, alt: "Riasan pengantin adat dengan aksesori emas" },
   { src: g6, alt: "Rias keluarga serasi di acara pernikahan" },
 ];
