@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import g3Asset from "@/assets/gallery-3.jpg.asset.json";
 import g4Asset from "@/assets/gallery-4.jpg.asset.json";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
@@ -9,7 +9,7 @@ import g6 from "@/assets/gallery-6.jpg";
 const photos = [
   { src: g1, alt: "Riasan pengantin natural glam dengan veil" },
   { src: g2, alt: "Proses make up di studio oleh MUA Hapsari" },
-  { src: g3, alt: "Riasan wisuda yang segar dan elegan" },
+  { src: g3Asset.url, alt: "Riasan natural glam dengan senyum memesona" },
   { src: g4Asset.url, alt: "Pasangan pengantin dalam busana adat Jawa yang anggun" },
   { src: g5, alt: "Riasan pengantin adat dengan aksesori emas" },
   { src: g6, alt: "Rias keluarga serasi di acara pernikahan" },
