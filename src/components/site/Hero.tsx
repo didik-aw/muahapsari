@@ -17,15 +17,17 @@ export function Hero() {
         className="absolute inset-0 z-0 will-change-transform"
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1)` }}
       >
-        <img
-          src={heroBride.url}
-          alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
-          width={1920}
-          height={1280}
-          className="h-full w-full object-cover object-[70%_center]"
-        />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-full md:w-[92%] lg:w-[86%]">
+          <img
+            src={heroBride.url}
+            alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
+            width={1920}
+            height={1280}
+            className="h-full w-full object-cover object-[85%_center] brightness-110"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
       </div>
 
       <div className="container-lux relative z-10 w-full py-32">
