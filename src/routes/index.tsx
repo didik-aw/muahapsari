@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { CallToAction } from "@/components/site/CallToAction";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import { BookingProvider } from "@/context/BookingContext";
 import { useScrollReveal } from "@/hooks/use-reveal";
 
 const title = "MUA Hapsari — Jasa Make Up Artist Elegan di Boyolali";
@@ -34,20 +35,22 @@ function Index() {
   useScrollReveal();
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <WhyUs />
-        <QuoteSection />
-        <Gallery />
-        <Testimonials />
-        <CallToAction />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
+    <BookingProvider>
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <WhyUs />
+          <QuoteSection />
+          <Gallery />
+          <Testimonials />
+          <CallToAction />
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
+    </BookingProvider>
   );
 }

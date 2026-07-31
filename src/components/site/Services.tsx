@@ -1,3 +1,5 @@
+import { useBooking } from "@/context/BookingContext";
+
 const services = [
   { icon: "👰", title: "Rias Pengantin", desc: "Riasan istimewa yang anggun dan tahan seharian untuk hari pernikahan Anda." },
   { icon: "👨‍👩‍👧", title: "Rias Keluarga", desc: "Tampilan serasi dan elegan untuk keluarga besar di acara sakral." },
@@ -6,6 +8,8 @@ const services = [
 ];
 
 export function Services() {
+  const { openBookingModal } = useBooking();
+
   return (
     <section id="layanan" className="bg-[image:var(--gradient-blush)] py-24 sm:py-32">
       <div className="container-lux">
@@ -26,9 +30,10 @@ export function Services() {
           {services.map((s, i) => (
             <article
               key={s.title}
+              onClick={() => openBookingModal(s.title)}
               data-reveal
               data-delay={i * 120}
-              className="reveal group rounded-[20px] border border-border/70 bg-card p-8 text-center shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-2 hover:border-gold/50 hover:bg-[image:var(--gradient-cream)] hover:shadow-[var(--shadow-lift)]"
+              className="reveal group rounded-[20px] border border-border/70 bg-card p-8 text-center shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-2 hover:border-gold/50 hover:bg-[image:var(--gradient-cream)] hover:shadow-[var(--shadow-lift)] cursor-pointer"
             >
               <span className="inline-grid h-16 w-16 place-items-center rounded-full bg-blush text-2xl ring-1 ring-gold/40 transition-all duration-300 group-hover:bg-white group-hover:ring-gold">
                 {s.icon}
@@ -37,6 +42,9 @@ export function Services() {
                 {s.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">{s.desc}</p>
+              <span className="mt-4 inline-block text-xs font-semibold text-gold group-hover:underline">
+                Booking Paket Ini →
+              </span>
             </article>
           ))}
         </div>

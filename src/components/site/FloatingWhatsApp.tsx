@@ -1,13 +1,15 @@
-import { WHATSAPP_LINK, WHATSAPP_NUMBER } from "@/lib/site";
+import { WHATSAPP_NUMBER } from "@/lib/site";
+import { useBooking } from "@/context/BookingContext";
 
 export function FloatingWhatsApp() {
+  const { openBookingModal } = useBooking();
+
   return (
-    <a
-      href={WHATSAPP_LINK}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      type="button"
+      onClick={() => openBookingModal()}
       aria-label={`Booking via WhatsApp ${WHATSAPP_NUMBER}`}
-      className="pulse-gold group fixed right-5 bottom-5 z-50 flex items-center gap-0 rounded-full bg-[image:var(--gradient-gold)] shadow-[var(--shadow-lift)] transition-transform duration-300 hover:scale-105 sm:right-8 sm:bottom-8"
+      className="pulse-gold group fixed right-5 bottom-5 z-50 flex items-center gap-0 rounded-full bg-[image:var(--gradient-gold)] shadow-[var(--shadow-lift)] transition-transform duration-300 hover:scale-105 sm:right-8 sm:bottom-8 cursor-pointer border-0"
     >
       <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full sm:h-16 sm:w-16">
         <svg viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7 text-white sm:h-8 sm:w-8">
@@ -18,6 +20,6 @@ export function FloatingWhatsApp() {
       <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm font-medium text-white transition-all duration-300 group-hover:max-w-[12rem] group-hover:pr-5">
         {WHATSAPP_NUMBER}
       </span>
-    </a>
+    </button>
   );
 }

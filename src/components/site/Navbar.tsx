@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import hapsariSymbol from "@/assets/hapsari-symbol.png";
-import { WHATSAPP_LINK } from "@/lib/site";
+import { useBooking } from "@/context/BookingContext";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { openBookingModal } = useBooking();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -49,14 +50,13 @@ export function Navbar() {
           </span>
         </a>
 
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-gold shrink-0 px-5 py-3 text-xs sm:px-7 sm:text-sm"
+        <button
+          type="button"
+          onClick={() => openBookingModal()}
+          className="btn-gold shrink-0 px-5 py-3 text-xs sm:px-7 sm:text-sm cursor-pointer"
         >
           Booking via WhatsApp
-        </a>
+        </button>
       </nav>
     </header>
   );

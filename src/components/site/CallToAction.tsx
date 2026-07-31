@@ -1,6 +1,9 @@
-import { WHATSAPP_LINK, WHATSAPP_NUMBER } from "@/lib/site";
+import { WHATSAPP_NUMBER } from "@/lib/site";
+import { useBooking } from "@/context/BookingContext";
 
 export function CallToAction() {
+  const { openBookingModal } = useBooking();
+
   return (
     <section className="bg-[image:var(--gradient-gold)] py-24 sm:py-32">
       <div className="container-lux text-center">
@@ -16,14 +19,13 @@ export function CallToAction() {
           elegan, natural, dan berkesan untuk setiap acara penting dalam hidup Anda.
         </p>
         <div className="reveal mt-10" data-reveal data-delay="240">
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-sm font-medium text-gold-dark shadow-[var(--shadow-lift)] transition-all duration-300 hover:-translate-y-1 hover:bg-cream"
+          <button
+            type="button"
+            onClick={() => openBookingModal()}
+            className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-sm font-medium text-gold-dark shadow-[var(--shadow-lift)] transition-all duration-300 hover:-translate-y-1 hover:bg-cream cursor-pointer"
           >
             Booking via WhatsApp {WHATSAPP_NUMBER}
-          </a>
+          </button>
         </div>
       </div>
     </section>
