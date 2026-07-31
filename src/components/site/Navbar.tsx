@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoHapsari from "@/assets/logo-hapsari.png.asset.json";
+import hapsariSymbol from "@/assets/hapsari-symbol.png";
 import { WHATSAPP_LINK } from "@/lib/site";
 
 export function Navbar() {
@@ -24,7 +24,7 @@ export function Navbar() {
         <a href="#hero" className="flex min-w-0 items-center gap-3">
           <span className="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-gold/60 shadow-sm">
             <img
-              src={logoHapsari.url}
+              src={hapsariSymbol}
               alt="Logo MUA Hapsari"
               width={40}
               height={40}

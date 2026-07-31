@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import heroBride from "@/assets/hero-bride.jpg.asset.json";
+import heroBride from "@/assets/dok hapsari manten cewe.jpeg";
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
@@ -18,7 +18,7 @@ export function Hero() {
       >
         <div className="absolute inset-y-0 right-0 w-full md:w-[68%] lg:w-[58%]">
           <img
-            src={heroBride.url}
+            src={heroBride}
             alt="Pengantin wanita dalam busana adat Jawa yang anggun karya MUA Hapsari"
             width={1920}
             height={1280}
