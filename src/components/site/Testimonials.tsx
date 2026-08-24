@@ -52,23 +52,23 @@ export function Testimonials() {
         </div>
 
         <div className="reveal relative mx-auto mt-14 max-w-3xl" data-reveal data-delay="180">
-          <div className="relative min-h-[24rem] sm:min-h-[20rem]">
+          <div className="relative min-h-[26rem] sm:min-h-[21rem]">
             {testimonials.map((t, i) => (
               <figure
                 key={t.name}
                 aria-hidden={i !== index}
-                className={`absolute inset-0 rounded-[20px] bg-card p-8 text-center shadow-[var(--shadow-soft)] transition-opacity duration-700 sm:p-12 ${
+                className={`absolute inset-0 flex flex-col justify-center rounded-[20px] bg-card p-6 sm:p-10 text-center shadow-[var(--shadow-soft)] transition-opacity duration-700 overflow-y-auto ${
                   i === index ? "opacity-100" : "pointer-events-none opacity-0"
                 }`}
               >
-                <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-blush font-display text-xl text-gold-dark ring-1 ring-gold/50">
+                <span className="mx-auto grid h-14 w-14 shrink-0 place-items-center rounded-full bg-blush font-display text-xl text-gold-dark ring-1 ring-gold/50">
                   {t.initial}
                 </span>
-                <div className="mt-4 text-gold">★★★★★</div>
-                <blockquote className="mt-4 font-display text-lg leading-relaxed text-ink italic sm:text-xl">
+                <div className="mt-3 text-gold text-sm">★★★★★</div>
+                <blockquote className="mt-3 font-display text-base leading-relaxed text-ink italic sm:text-xl">
                   &ldquo;{t.text}&rdquo;
                 </blockquote>
-                <figcaption className="mt-5 text-sm text-ink-soft">
+                <figcaption className="mt-4 text-xs sm:text-sm text-ink-soft">
                   <span className="block font-medium text-ink">{t.name}</span>
                   {t.role}
                 </figcaption>
